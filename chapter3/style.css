@@ -1,0 +1,43 @@
+button {
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 10px;
+}
+button:active {
+  background-color: green;
+}
+button:hover {
+  background-color: orange;
+  cursor: pointer;
+}
+input:focus-visible {
+  outline: red 2px solid;
+  outline-offset: 2px;
+}
+.box {
+  height: 500px;
+  min-width: 100px;
+  background-color: rgb(141, 245, 245);
+}
+/* .parent-box {
+  height: 200px;
+  width: 100px;
+  background-color: green;
+} */
+
+.text {
+  color: brown;
+  text-align: start;
+  letter-spacing: 1.1px;
+  line-height: 30px;
+  text-indent: 2px;
+  text-transform: capitalize;
+  background-color: black;
+}
+.text span {
+  color: orange;
+  vertical-align: super;
+  direction: rtl;
+  unicode-bidi: bidi-override;
+}

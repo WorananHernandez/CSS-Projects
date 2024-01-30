@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chapter 4 | Problem 2</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        background-color: cornsilk;
+      }
+      .container {
+        height: 100vh;
+        background-color: rgb(81, 172, 172);
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .card_container {
+        display: flex;
+        background-color: rgb(87, 117, 117);
+        width: 800px;
+        min-width: 350px;
+        border-radius: 10px;
+        overflow: hidden;
+        box-shadow: 10px 20px 40px rgb(0, 0, 0, 0.5);
+      }
+      .texts {
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: "Inter", sans-serif;
+      }
+      .texts h1 {
+        font-size: 64px;
+      }
+
+      .image_container {
+        flex: 1;
+      }
+      .image_container img {
+        height: 100%;
+        width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card_container">
+        <div class="texts">
+          <h1>2024</h1>
+          <h2>Happy new year</h2>
+        </div>
+        <div class="image_container">
+          <img src="./fireworks.png" alt="fireworks" />
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
