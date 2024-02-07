@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <title>Chapter 6 | problem 2</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        font-family: "Inter", sans-serif;
+      }
+      .container {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+      }
+      .dots-wrapper {
+        display: flex;
+        gap: 10px;
+      }
+      .dots {
+        /* background-color: red; */
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+      }
+
+      .dots:nth-child(2n) {
+        background-color: green;
+        animation: evenLoading ease-in 1s infinite;
+      }
+      .dots:nth-child(2n + 1) {
+        background-color: red;
+        animation: oddLoading ease-in 1s infinite;
+      }
+
+      @keyframes oddLoading {
+        0%,
+        100% {
+          translate: 0 50%;
+        }
+
+        25%,
+        75% {
+          translate: 0 0%;
+        }
+        50% {
+          translate: 0 -50%;
+        }
+      }
+      @keyframes evenLoading {
+        0%,
+        100% {
+          translate: 0 -50%;
+        }
+
+        25%,
+        75% {
+          translate: 0 0%;
+        }
+        50% {
+          translate: 0 50%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="dots-wrapper">
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+        <div class="dots"></div>
+      </div>
+    </div>
+  </body>
+</html>
